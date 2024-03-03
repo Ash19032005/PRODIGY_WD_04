@@ -1,0 +1,206 @@
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Document</title>
+       <link href="style.css" rel="stylesheet">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/40eafe71f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+       <div class="container">
+              <nav class="nav-bar">
+                     <h1><span>A</span>shwin</h1>
+                     <ul class="nav-list" id="side-menu">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fas fa-times" onclick="closeMenu()" id="cross"></i>
+                     </ul>
+                     <i class="fas fa-bars" onclick="openMenu()" id="ham"></i>
+              </nav>
+              <div class="header-text">
+                    <div class="header-font">
+                     <p>Web Devoloper</p>
+                     <h1>Hi,I'm <span style="color: #ff004f;">Ashwin.</span>From India</h1>
+                     </div> 
+                     <div class="home-image">
+                            <img src="Assests/Image home.jpg" alt="Front-image" width="300px" height="300px">
+                     </div>
+              </div>
+              
+       </div>
+   </div>  
+   <div id="about">
+       <div class="container-1">
+              <div class="row">
+                     <div class="about-col-1">
+                            <img src="Assests/user.png"/>
+                     </div>
+                     <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ut aspernatur ea, sunt molestiae rerum facere quasi debitis distinctio officia praesentium doloremque delectus neque. 
+                                    Voluptates officiis, saepe consequatur repellat enim illo mollitia ipsum aperiam quibusdam facilis minima modi veritatis beatae eaque repellendus. 
+                                   Adipisci dignissimos laborum iusto eos magnam facere sit tempore.</p>
+                            <div class="tab-titles">
+                                   <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                   <p class="tab-links" onclick="opentab('experience')">CP</p>
+                                   <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                  <ul>
+                                   <li><span>UI/UX Design</span><br>Designing Web and app interfaces</li>
+                                   <li><span>Web devolopment</span><br>Designing Web and app interfaces</li>
+                                  </ul>  
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                   <ul>
+                                    <li><span>Leetcode</span><br>solved 400+ problems in leetcode <a href="https://leetcode.com/ashwinsk1905/" style="color:#ff0051ae; text-decoration:none"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                                    <li><span>Geeks for Geeks</span><br>solved 50+ problems in Geeks for geeks <a href="https://auth.geeksforgeeks.org/user/ashwins0fdo" style="color: #ff0051ae ; text-decoration:none" ><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                                   </ul>  
+                             </div>
+                             <div class="tab-contents" id="education">
+                                   <ul>
+                                    <li><span>Under Graduation</span><br>Coimbatore Institute of Technology,TamilNadu</li>
+                                    <li><span>12th Grade</span><br>SRV,TamilNadu</li>
+                                   </ul>  
+                             </div>
+                     </div>
+
+              </div>
+       </div>
+   </div>
+     <!-- service section -->
+     <div id="service">
+       <div class="container">
+              <h1 class="sub-title">My Services</h1>
+              <div class="service-list">
+                     <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>Web Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla provident unde rerum asperiores quo blanditiis.</p>
+                            <a href="#">Learn more</a>
+                     </div>
+                     <div>
+                            <i class="fa-solid fa-crop-simple"></i>
+                            <h2>UI/UX Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla provident unde rerum asperiores quo blanditiis.</p>
+                            <a href="#">Learn more</a>
+                     </div>
+              </div>
+       </div>
+     </div>
+
+     <!-- portfolio section -->
+     <div id="portfolio">
+        <div class="container">
+              <h1 class="sub-title">My Task</h1>
+              <div class="work-list">
+                     <div class="work">
+                            <img src="Assests/work-1.png" alt="work-1">
+                            <div class="layer">
+                                   <h3>Nike Shoe landing Page</h3>
+                                   <p>This website is furnished using <br>React js and Tailwind CSS Framework</p>
+                                   <a  href="https://github.com/Ash19032005/responsive-landing-page"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                     </div>
+                     <div class="work">
+                            <img src="Assests/work-2.png" alt="work-2">
+                            <div class="layer">
+                            <h3>Weather App</h3>
+                            <p>This website is furnished using React js and Weather API</p>
+                            <a><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                     </div>
+                     </div>
+                     <div class="work">
+                            <img src="Assests/work-3.png" alt="work-3">
+                            <div class="layer">
+                            <h3>Food Ordering App UI</h3>
+                            <p>This User Interface is designed with Figma and <br>gives a better User Experience</p>
+                            <a href="https://www.behance.net/gallery/183249295/ONLINE-FOOD-ORDERING-APP-UI"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                     </div>
+                     </div>
+              </div>
+        </div>
+     </div>
+     <!-- contact section -->
+     <div id="contact">
+       <div class="container-contact">
+              <div class="row">
+                     <div class="contact-left">
+                            <h1 class="sub-title">Contact Me</h1>
+                            <p id="mail"><i class="fa-solid fa-paper-plane" ></i>  ashwinsk1905@gmail.com</p>
+                            <p><i class="fa-solid fa-phone"></i> +91 9361566136</p>
+                            <div class="social-icons">
+                                   <a href=""><i class="fab fa-instagram"></i></a>
+                                   <a href=""><i class="fab fa-linkedin"></i></a>
+                            </div>
+
+                            <button class="btn" href="">Download Resume</button>
+                     </div>
+                     <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                   <input type="text" name="Name" placeholder="Your Name" required>
+                                   <input type="email" name="email" placeholder="Your Email" required>
+                                   <textarea name="message" rows="6" placeholder="Your messsage"></textarea>
+                                   <button type="submit">Submit</button>
+                            </form>
+                            <p id="repeat">reset</p>
+                     </div>
+              </div>
+       </div>
+       <div class="copy-right">
+              <p>Copyright @ Ashwin</p>
+       </div>
+     </div>
+    <script>
+       var tablinks=document.getElementsByClassName('tab-links');
+       var tabcontents=document.getElementsByClassName('tab-contents');
+       function opentab(para){
+          for(tablink of tablinks){
+              tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+              tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(para).classList.add("active-tab");
+       }
+    </script>
+    <script>
+       var sidemenu=document.getElementById("side-menu");
+       function openMenu(){
+              sidemenu.style.right="-20px";
+              console.log(sidemenu);
+       }
+       function closeMenu(){
+              sidemenu.style.right="-320px";
+       }
+    </script>
+
+     
+     <script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbxdjdLhecGies56-QeZxvQfXyN0cE30dAOgRaWjJ3asUhRdH23ruT6Hrp2KmMf7FaC8/exec';
+       const form = document.forms['submit-to-google-sheet']
+       const again=document.getElementById("repeat");
+       form.addEventListener('submit', e => {
+         e.preventDefault()
+         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+           .then(response => {
+              again.innerHTML="message sent successfully"
+              setTimeout(function(){
+                     again.innerHTML="";
+              },5000)
+              form.reset()
+           })
+           .catch(error => console.error('Error!', error.message))
+       })
+     </script>
+</body>
+</html>
